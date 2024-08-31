@@ -1,62 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>New</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet">
-        <style>
-        input[type=text], input[type=password], textarea, select {  
-            width: 98%;
-            padding: 15px 5px;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border: none;  
-        }
-        input[type=text]:focus, input[type=password]:focus {  
-            outline: none;
-        }
-        .text-center{
-            text-align: center;
-        }
-        .float-left{
-            float: left;
-        }
-        .registerbtn{
-            background: green;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .registerbtn:hover{
-            background: #f1f1f1;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .w-100{
-            width: 100%;
-            padding: 25px;
-            background: aliceblue;
-        }
-        </style>
-        
-    </head>
-    <body>
-                <div class="page-content text-center">
-            <h1 class="main-title">Registration</h1>
-            <form>
-                <div class="w-100">
-                    <label class="float-left"> <b>Full Name:</b> </label>
-                    <input type="text" id="full_name" placeholder="Full Name" size="15" />
-                    <label class="float-left" for="email"><b>Email Id:</b></label>
-                    <input type="text" placeholder="Enter Email" id="email" required />
-                    <label class="float-left"><b>Phone:</b></label>
-                    <html>
-
 <head>
-    
-    <title>Event Registration Form</title>
+    <title>New</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* Basic page styling */
         body {
@@ -139,18 +86,12 @@
 
     <div class="form-container">
         <form id="registrationForm">
-            <h2>Event Registration</h2>
+            <h2>Registration</h2>
             
-            <!-- First Name Field -->
+            <!-- Full Name Field -->
             <div class="inputbox">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
-            
-            <!-- Last Name Field -->
-            <div class="inputbox">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" required>
             </div>
             
             <!-- Email Field -->
@@ -165,8 +106,26 @@
                 <input type="tel" id="phone" name="phone" required>
             </div>
             
+            <!-- Date of Birth Field -->
+            <div class="inputbox">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="inputbox">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="password" required>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="inputbox">
+                <label for="cpwd">Confirm Password</label>
+                <input type="password" id="cpwd" name="confirmPassword" required>
+            </div>
+            
             <!-- Submit Button -->
-            <button type="submit" class="submit-btn">Register</button>
+            <button type="submit" class="submit-btn">Submit</button>
             
             <!-- Success Message -->
             <div id="successMessage" class="success-message" style="display: none;">
@@ -193,14 +152,4 @@
 
 </body>
 </html>
-input type="text" id="phone" placeholder="phone no." size="10" required /> 
-                    <label class="float-left" for="psw"><b>Password:</b></label>
-                    <input type="password" placeholder="Enter Password" id="pwd" required />
-                    <label class="float-left" for="psw-repeat"><b>Re-type Password:</b></label>
-                    <input type="password" placeholder="Retype Password" id="cpwd" required />
-                    <button type="submit" class="registerbtn">Submit</button>
-                </div>
-            </form>
-        </div>
-    </body>
-</html>
+
