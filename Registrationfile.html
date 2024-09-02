@@ -99,7 +99,11 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            
+            <!-- Confirm Email Field -->
+            <div class="inputbox">
+                <label for="confirm_email">Confirm Email</label>
+                <input type="email" id="confirm_email" name="confirm_email" required>
+            </div>
             <!-- Phone Number Field -->
             <div class="inputbox">
                 <label for="phone">Phone Number</label>
@@ -141,7 +145,24 @@
 
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
+            // Get the values of email and confirm email fields
+            const email = document.getElementById('email').value;
+            const confirmEmail = document.getElementById('confirm_email').value;
 
+            // Check if email and confirm email match
+            if (email !== confirmEmail) {
+                alert('Email addresses do not match.');
+                return;
+            }
+            // Get the values of password and confirm password fields
+            const password = document.getElementById('pwd').value;
+            const confirmPassword = document.getElementById('cpwd').value;
+
+            // Check if password and confirm password match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return;
+            }
             // Display the success message
             successMessage.style.display = 'block';
 
